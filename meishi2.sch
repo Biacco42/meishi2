@@ -1,0 +1,284 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L promicro:ProMicro U1
+U 1 1 5CDACCA8
+P 2150 3050
+F 0 "U1" H 2150 4087 60  0000 C CNN
+F 1 "ProMicro" H 2150 3981 60  0000 C CNN
+F 2 "promicro:ProMicro" H 2250 2000 60  0001 C CNN
+F 3 "" H 2250 2000 60  0000 C CNN
+	1    2150 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 2300
+NoConn ~ 1450 2400
+NoConn ~ 2850 2300
+NoConn ~ 2850 2700
+NoConn ~ 2850 3000
+NoConn ~ 2850 3100
+NoConn ~ 2850 3200
+NoConn ~ 2850 3300
+NoConn ~ 2850 3400
+NoConn ~ 1450 3300
+NoConn ~ 1450 3400
+NoConn ~ 1450 3000
+NoConn ~ 1450 2900
+NoConn ~ 1450 2700
+NoConn ~ 1450 2800
+$Comp
+L power:GND #PWR05
+U 1 1 5CDACDD8
+P 1300 1000
+F 0 "#PWR05" H 1300 750 50  0001 C CNN
+F 1 "GND" H 1305 827 50  0000 C CNN
+F 2 "" H 1300 1000 50  0001 C CNN
+F 3 "" H 1300 1000 50  0001 C CNN
+	1    1300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5CDACE3C
+P 1800 1000
+F 0 "#PWR06" H 1800 850 50  0001 C CNN
+F 1 "VCC" H 1817 1173 50  0000 C CNN
+F 2 "" H 1800 1000 50  0001 C CNN
+F 3 "" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CDACEA0
+P 1300 1000
+F 0 "#FLG01" H 1300 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1174 50  0000 C CNN
+F 2 "" H 1300 1000 50  0001 C CNN
+F 3 "~" H 1300 1000 50  0001 C CNN
+	1    1300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CDACEC5
+P 1800 1000
+F 0 "#FLG02" H 1800 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1173 50  0000 C CNN
+F 2 "" H 1800 1000 50  0001 C CNN
+F 3 "~" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CDACF70
+P 2850 2400
+F 0 "#PWR03" H 2850 2150 50  0001 C CNN
+F 1 "GND" V 2855 2272 50  0000 R CNN
+F 2 "" H 2850 2400 50  0001 C CNN
+F 3 "" H 2850 2400 50  0001 C CNN
+	1    2850 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5CDACF98
+P 1450 2500
+F 0 "#PWR01" H 1450 2250 50  0001 C CNN
+F 1 "GND" V 1455 2372 50  0000 R CNN
+F 2 "" H 1450 2500 50  0001 C CNN
+F 3 "" H 1450 2500 50  0001 C CNN
+	1    1450 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CDACFBE
+P 1450 2600
+F 0 "#PWR02" H 1450 2350 50  0001 C CNN
+F 1 "GND" V 1455 2472 50  0000 R CNN
+F 2 "" H 1450 2600 50  0001 C CNN
+F 3 "" H 1450 2600 50  0001 C CNN
+	1    1450 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5CDACFEB
+P 2850 2600
+F 0 "#PWR04" H 2850 2450 50  0001 C CNN
+F 1 "VCC" V 2867 2728 50  0000 L CNN
+F 2 "" H 2850 2600 50  0001 C CNN
+F 3 "" H 2850 2600 50  0001 C CNN
+	1    2850 2600
+	0    1    1    0   
+$EndComp
+Text GLabel 1450 3100 0    50   Input ~ 0
+row0
+Text GLabel 1450 3200 0    50   Input ~ 0
+row1
+Text GLabel 2850 2800 2    50   Input ~ 0
+col0
+Text GLabel 2850 2900 2    50   Input ~ 0
+col1
+Text GLabel 2850 2500 2    50   Input ~ 0
+RST
+Text GLabel 7000 2650 0    50   Input ~ 0
+RST
+Wire Wire Line
+	7000 2650 7150 2650
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5CDAD623
+P 7350 2650
+F 0 "SW5" H 7350 2935 50  0000 C CNN
+F 1 "SW_Push" H 7350 2844 50  0000 C CNN
+F 2 "library:tact_switch_5mm" H 7350 2850 50  0001 C CNN
+F 3 "" H 7350 2850 50  0001 C CNN
+	1    7350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2650 7550 2800
+$Comp
+L power:GND #PWR07
+U 1 1 5CDAD75E
+P 7550 2800
+F 0 "#PWR07" H 7550 2550 50  0001 C CNN
+F 1 "GND" H 7555 2627 50  0000 C CNN
+F 2 "" H 7550 2800 50  0001 C CNN
+F 3 "" H 7550 2800 50  0001 C CNN
+	1    7550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CDAD7F9
+P 4150 2250
+F 0 "SW1" H 4150 2535 50  0000 C CNN
+F 1 "SW_Push" H 4150 2444 50  0000 C CNN
+F 2 "library:SW_Cherry_MX1A_1.00u_PCB" H 4150 2450 50  0001 C CNN
+F 3 "" H 4150 2450 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5CDAD8ED
+P 5400 2250
+F 0 "SW3" H 5400 2535 50  0000 C CNN
+F 1 "SW_Push" H 5400 2444 50  0000 C CNN
+F 2 "library:SW_Cherry_MX1A_1.00u_PCB" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CDAD96A
+P 4150 3200
+F 0 "SW2" H 4150 3485 50  0000 C CNN
+F 1 "SW_Push" H 4150 3394 50  0000 C CNN
+F 2 "library:SW_Cherry_MX1A_1.00u_PCB" H 4150 3400 50  0001 C CNN
+F 3 "" H 4150 3400 50  0001 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5CDAD9AD
+P 5400 3200
+F 0 "SW4" H 5400 3485 50  0000 C CNN
+F 1 "SW_Push" H 5400 3394 50  0000 C CNN
+F 2 "library:SW_Cherry_MX1A_1.00u_PCB" H 5400 3400 50  0001 C CNN
+F 3 "" H 5400 3400 50  0001 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D1
+U 1 1 5CDADA46
+P 4350 2350
+F 0 "D1" V 4396 2282 50  0000 R CNN
+F 1 "D_Small" V 4305 2282 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" V 4350 2350 50  0001 C CNN
+F 3 "~" V 4350 2350 50  0001 C CNN
+	1    4350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 5CDADB1D
+P 5600 2350
+F 0 "D3" V 5646 2282 50  0000 R CNN
+F 1 "D_Small" V 5555 2282 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" V 5600 2350 50  0001 C CNN
+F 3 "~" V 5600 2350 50  0001 C CNN
+	1    5600 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D4
+U 1 1 5CDADBC2
+P 5600 3300
+F 0 "D4" V 5646 3232 50  0000 R CNN
+F 1 "D_Small" V 5555 3232 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" V 5600 3300 50  0001 C CNN
+F 3 "~" V 5600 3300 50  0001 C CNN
+	1    5600 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 5CDADC7F
+P 4350 3300
+F 0 "D2" V 4396 3232 50  0000 R CNN
+F 1 "D_Small" V 4305 3232 50  0000 R CNN
+F 2 "Diode_THT:D_T-1_P10.16mm_Horizontal" V 4350 3300 50  0001 C CNN
+F 3 "~" V 4350 3300 50  0001 C CNN
+	1    4350 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 2450 4350 2450
+Connection ~ 4350 2450
+Wire Wire Line
+	4350 2450 5600 2450
+Wire Wire Line
+	4200 3400 4350 3400
+Connection ~ 4350 3400
+Wire Wire Line
+	4350 3400 5600 3400
+Wire Wire Line
+	3950 1950 3950 2250
+Connection ~ 3950 2250
+Wire Wire Line
+	3950 2250 3950 3200
+Wire Wire Line
+	5200 1950 5200 2250
+Connection ~ 5200 2250
+Wire Wire Line
+	5200 2250 5200 3200
+Text GLabel 3950 1950 1    50   Input ~ 0
+col0
+Text GLabel 5200 1950 1    50   Input ~ 0
+col1
+Text GLabel 4200 2450 0    50   Input ~ 0
+row0
+Text GLabel 4200 3400 0    50   Input ~ 0
+row1
+$EndSCHEMATC
