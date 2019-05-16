@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.0.2-bee76a0~70~ubuntu18.04.1*
-G04 #@! TF.CreationDate,2019-05-17T00:05:31+09:00*
+G04 #@! TF.CreationDate,2019-05-17T00:14:41+09:00*
 G04 #@! TF.ProjectId,meishi2,6d656973-6869-4322-9e6b-696361645f70,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L2,Bot*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.0.2-bee76a0~70~ubuntu18.04.1) date 2019年05月17日 00時05分31秒*
+G04 Created by KiCad (PCBNEW 5.0.2-bee76a0~70~ubuntu18.04.1) date 2019年05月17日 00時14分41秒*
 %MOMM*%
 %LPD*%
 G01*
@@ -24,10 +24,10 @@ G04 #@! TA.AperFunction,ComponentPad*
 %ADD13R,1.600000X1.600000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
-%ADD14R,2.000000X2.000000*%
+%ADD14O,2.000000X2.000000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
-%ADD15O,2.000000X2.000000*%
+%ADD15R,2.000000X2.000000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,Conductor*
 %ADD16C,0.254000*%
@@ -169,38 +169,40 @@ G04 #@! TO.N,Net-(U1-Pad1)*
 X50800000Y-66040000D03*
 G04 #@! TD*
 D14*
-G04 #@! TO.P,D1,1*
-G04 #@! TO.N,row0*
-X52070000Y-82550000D03*
-D15*
 G04 #@! TO.P,D1,2*
 G04 #@! TO.N,Net-(D1-Pad2)*
 X52070000Y-77470000D03*
+D15*
+G04 #@! TO.P,D1,1*
+G04 #@! TO.N,row0*
+X52070000Y-82550000D03*
 G04 #@! TD*
+D14*
 G04 #@! TO.P,D2,2*
 G04 #@! TO.N,Net-(D2-Pad2)*
 X90170000Y-77470000D03*
-D14*
+D15*
 G04 #@! TO.P,D2,1*
 G04 #@! TO.N,row1*
 X90170000Y-82550000D03*
 G04 #@! TD*
-D15*
+D14*
 G04 #@! TO.P,D3,2*
 G04 #@! TO.N,Net-(D3-Pad2)*
 X71120000Y-77470000D03*
-D14*
+D15*
 G04 #@! TO.P,D3,1*
 G04 #@! TO.N,row0*
 X71120000Y-82550000D03*
 G04 #@! TD*
-G04 #@! TO.P,D4,1*
-G04 #@! TO.N,row1*
-X109220000Y-82550000D03*
-D15*
+D14*
 G04 #@! TO.P,D4,2*
 G04 #@! TO.N,Net-(D4-Pad2)*
 X109220000Y-77470000D03*
+D15*
+G04 #@! TO.P,D4,1*
+G04 #@! TO.N,row1*
+X109220000Y-82550000D03*
 G04 #@! TD*
 D16*
 G04 #@! TO.N,row0*
